@@ -603,7 +603,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 5.87e-43, y: 0.0042675473, z: 5.86e-43, w: 2.7245059e+20}
+  m_BoundingSphereOverride: {x: 0.0000008142067, y: 6.323129e-19, z: 6337696, w: NaN}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -1087,7 +1087,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66d85889cd785c54f9ff972dcf55fc6a, type: 3}
   m_Name: 
@@ -1955,8 +1955,8 @@ GameObject:
   - component: {fileID: 1661014326}
   - component: {fileID: 1661014325}
   - component: {fileID: 1661014324}
-  - component: {fileID: 1661014329}
   - component: {fileID: 1661014328}
+  - component: {fileID: 1661014329}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2071,7 +2071,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  rotateSpeed: 60
+  yRotateSpeed: 180
+  xRotateSpeed: 90
+  camera: {fileID: 963194225}
+  projectilePrefab: {fileID: 7137154181895070923, guid: e83bbb8303cfe7841b735d14ba6c3f64,
+    type: 3}
 --- !u!1 &1694977715
 GameObject:
   m_ObjectHideFlags: 0
