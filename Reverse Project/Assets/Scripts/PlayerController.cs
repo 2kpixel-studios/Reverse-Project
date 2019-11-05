@@ -41,7 +41,9 @@ public class PlayerController : MonoBehaviour {
 
 		//fires a projectile for each time the left mouse button is pressed
 		if (Input.GetMouseButtonDown(0)) {
+			//obj is the projectile instance
 			GameObject obj = GameObject.Instantiate(projectilePrefab, transform.position + new Vector3(0, 0, 0.5f), transform.rotation);
+			//p is the script on the projectile
 			Projectile p = obj.GetComponent<Projectile>();
 
 			if (p != null) {
